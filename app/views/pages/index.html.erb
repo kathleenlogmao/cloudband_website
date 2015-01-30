@@ -1,0 +1,38 @@
+<div id="fullpage">
+  <div id="home" class="section">
+    <%= render partial: "home" %>
+  </div>
+  <div id="service" class="row section">
+    <%= render partial: "service" %>
+  </div>
+ <div id="about_us" class="section">
+
+    <div class="slide ras" id="slide1">
+      <%= render partial: "shared/slide1" %>
+    </div>
+    <div class="slide" id="slide2">
+      <%= render partial: "shared/slide2" %>
+    </div>
+  </div>
+  <div id="contact" class="section">
+    <%= render partial: "contact" %>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function() {
+    $('#fullpage').fullpage(
+      {
+        anchors: ['home_menu', 'service_menu', 'about_us_menu', 'contact_menu'],
+        menu: '#menu',
+        scrollingSpeed: 1000,
+        navigation: false,
+        verticalCentered: false,
+        controlArrowColor: '#2ecc71'
+
+      });
+
+});
+</script>
+
