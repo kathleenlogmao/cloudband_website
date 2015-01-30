@@ -1,5 +1,5 @@
 #home {
-  background-image: url('3.png');
+  background-image: asset-data-asset-data-url('3.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,7 +32,7 @@
 }
 
 #service {
-  background-image: url('exclusive_paper.png');
+  background-image: asset-data-url('exclusive_paper.png');
 
   .services {
     padding: 30px;
@@ -107,17 +107,17 @@
 }
 
 #about_us {
-  background-image: url('exclusive_paper.png');
+  background-image: asset-data-url('exclusive_paper.png');
 
    .image_here {
-      background-image: url('sample.png');
+      background-image: asset-data-url('sample.png');
       width: 21vw;
       height: 20vw;
       margin-top: 2%;
     }
 
     .image_here:hover {
-      background-image: url('hover.png');
+      background-image: asset-data-url('hover.png');
       width: 21vw;
       height: 20vw;
       margin-top: 2%;
@@ -132,60 +132,60 @@
     }
 
     .img1 {
-      background-image: url('r1.jpg');
+      background-image: asset-data-url('r1.jpg');
       width: 25vw;
       height: 20vw;
     }
 
     .img1:hover {
-      background-image: url('o1.jpg');
+      background-image: asset-data-url('o1.jpg');
       width: 25vw;
       height: 20vw;
     }
 
     .img2 {
-      background-image: url('r2.jpg');
+      background-image: asset-data-url('r2.jpg');
       width: 25vw;
       height: 20vw;
     }
 
     .img2:hover {
-      background-image: url('o2.jpg');
+      background-image: asset-data-url('o2.jpg');
       width: 25vw;
       height: 20vw;
     }
 
     .img3 {
-      background-image: url('r3.jpg');
+      background-image: asset-data-url('r3.jpg');
       width: 25vw;
       height: 20vw;
     }
 
     .img3:hover {
-      background-image: url('o3.jpg');
+      background-image: asset-data-url('o3.jpg');
       width: 25vw;
       height: 20vw;
     }
 
      .img4{
-      background-image: url('r8.jpg');
+      background-image: asset-data-url('r8.jpg');
       width: 25vw;
       height: 20vw;
     }
 
     .img4:hover {
-      background-image: url('r7.jpg');
+      background-image: asset-data-url('r7.jpg');
       width: 25vw;
       height: 20vw;
     }
 
      .img5 {
-      background-image: url('r9.jpg');
+      background-image: asset-data-url('r9.jpg');
       width: 25vw;
       height: 30vw;
     }
     .img5:hover {
-      background-image: url('o4.jpg');
+      background-image: asset-data-url('o4.jpg');
       width: 25vw;
       height: 30vw;
     }
