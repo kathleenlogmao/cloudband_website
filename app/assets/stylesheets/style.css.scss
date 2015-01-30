@@ -113,14 +113,14 @@
       background-image: url('sample.png');
       width: 21vw;
       height: 20vw;
-      margin-top: 10%;
+      margin-top: 2%;
     }
 
     .image_here:hover {
       background-image: url('hover.png');
       width: 21vw;
       height: 20vw;
-      margin-top: 10%;
+      margin-top: 2%;
     }
 
     h3 {
@@ -190,9 +190,18 @@
       height: 30vw;
     }
 
-   
+    .abouts {
+      background-image: url('about.jpg');
+      height: 250px;
+    }
 
+  
 }
+
+#contact {
+  background-image: url('exclusive_paper.png');
+}
+
 
 
 

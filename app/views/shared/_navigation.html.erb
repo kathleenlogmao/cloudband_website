@@ -14,27 +14,30 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul id="menu" class="nav navbar-nav my_nav">
       <div class="row home_service">
-        <li data-menuanchor="home_menu" class="active">
+       <div class="col-md-2"></div>
+       <div class="col-md-2"></div>
+        <li data-menuanchor="home_menu" class="active col-md-2">
             <%= link_to "#home_menu" do %>
               <%= image_tag "Home.png" %>
             <% end %>
         </li>
-        <li data-menuanchor="service_menu"> 
+        <li data-menuanchor="service_menu" class="col-md-2">  
            <%= link_to "#service_menu" do %>
               <%= image_tag "service.png" %>
             <% end %>
         </li>
   
-       <li data-menuanchor="about_us_menu"> 
+       <li data-menuanchor="about_us_menu" class="col-md-2"> 
          <%= link_to "#about_us_menu" do %>
             <%= image_tag "flat-faces-icons-circle-6.png" %>
           <% end %>
       </li>
-       <li data-menuanchor="contact_menu"> 
+       <li data-menuanchor="contact_menu" class="col-md-2"> 
          <%= link_to "#contact_menu" do %>
             <%= image_tag "phone-icon.png" %>
           <% end %>
       </li>
+      
     </div>
     </ul> 
   </div><!-- /.navbar-collapse -->
