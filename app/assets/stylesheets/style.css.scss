@@ -94,7 +94,7 @@
     font-size: 1.5vw;
 
     .wk {
-      font-size: 1vw;
+      font-size: 12px;
     }
   }
 }
@@ -174,15 +174,43 @@
        }    
       }
 
-      .s1_about {
-        height: 200px;
-        margin-top: 3%;
+      .about_icons {
+         margin-left: 20%;
+      
+      }
 
-        .abouts {
-          p {
+      .s1_about {
+        margin-left: 20%;
+        h3 {
+          color: white;
+        }
+        .about2 {
+          background-color: #8E24AA;
+          height: 260px;
+            p {
             text-align: justify;
-            color: #0cd0a0;
-            font-size: 1.2vw;
+            color: white;
+            font-size: 14px;
+          }
+        }
+
+        .about3 {
+          background-color: #b8bd83;
+          height: 260px;
+            p {
+            text-align: justify;
+            color: white;
+            font-size: 14px;
+          }
+        }
+
+        .about4 {
+          background-color: #607b63;
+          height: 260px;
+            p {
+            text-align: justify;
+            color: white;
+            font-size: 14px;
           }
         }
        }

@@ -1,46 +1,43 @@
-<div class="row">
-   <nav class="row navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="col-md-12">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button data-toggle="collapse" class="navbar-toggle ocllapsed" type="button" data-target="#bs-example-navbar-collapse-1">
-        
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul id="menu" class="nav navbar-nav my_nav">
-      <div class="row home_service">
-       <div class="col-md-2"></div>
-       <div class="col-md-2"></div>
-        <li data-menuanchor="home_menu" class="active col-md-2">
+<div class="navigation" id="navigation">
+  <a class="nav-toggler" href="#" id="navToggler">
+    <span class="show-nav">&#9776;</span>
+    <span class="hide-nav">&times;</span>
+  </a>
+  <div class="navigation__inner home_service">
+    <ul id="menu">
+      <li data-menuanchor="home_menu" class="active">
             <%= link_to "#home_menu" do %>
               <%= image_tag "Home.png" %>
             <% end %>
-        </li>
-        <li data-menuanchor="service_menu" class="col-md-2">  
+      </li>
+       <li data-menuanchor="service_menu">  
            <%= link_to "#service_menu" do %>
               <%= image_tag "service.png" %>
             <% end %>
         </li>
   
-       <li data-menuanchor="about_us_menu" class="col-md-2"> 
+       <li data-menuanchor="about_us_menu"> 
          <%= link_to "#about_us_menu" do %>
             <%= image_tag "flat-faces-icons-circle-6.png" %>
           <% end %>
       </li>
-       <li data-menuanchor="contact_menu" class="col-md-2"> 
+       <li data-menuanchor="contact_menu"> 
          <%= link_to "#contact_menu" do %>
             <%= image_tag "phone-icon.png" %>
           <% end %>
       </li>
-      
-    </div>
-    </ul> 
-  </div><!-- /.navbar-collapse -->
+    </ul>
   </div>
-</nav>
 </div>
+
+<script>
+(function ($, window, document, undefined) {
+  $(function () {
+    var $navigation = $('#navigation'), $navToggler = $('#navToggler');
+    $('#navToggler').on('click', function (e) {
+      e.preventDefault();
+      $navigation.toggleClass('expanded');
+    });
+  });
+}(jQuery, this, this.document));
+</script>
