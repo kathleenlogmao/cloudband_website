@@ -1,5 +1,5 @@
 #home {
-  background-image: asset-data-asset-data-url('3.png');
+  background-image: asset-data-url('3.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,7 +22,6 @@
 
     h1 {
       color: #0cd0a0;
-      font-family: "Comic Sans MS", sans-serif;
       font-weight: bold;
       font-size:3em;
       margin-top: -10px;
@@ -42,11 +41,9 @@
     color: #07775b;
     font-size: 1.2vw;
     text-align: justify;
-    
   }
 
   .responsive {
-
    .lefts img{
      margin-left:-8%;
      margin-top: 1px;
@@ -64,16 +61,17 @@
     background-color: #e2e2e2;
     padding-bottom: 30px;
     padding-top: 20px;
+
     h1 {
       color: black;
-      font-family: "Comic Sans MS", sans-serif;
+      font-family: 'Muli', sans-serif;
       font-weight: bold;
       text-align: center;
     }
 
     h4 {
       color: black;
-      font-family: "Comic Sans MS", sans-serif;
+      font-family: 'Muli', sans-serif;
       text-align: center;
     }
 
@@ -92,14 +90,13 @@
   .consult {
     background-color: black;
     color: white;
-    padding: 10px;
-    font-size: 1.5em;
+    padding: 8px;
+    font-size: 1.5vw;
 
     .wk {
-      font-size: 12px;
+      font-size: 1vw;
     }
   }
-
 }
 
 .row {
@@ -113,14 +110,14 @@
       background-image: asset-data-url('sample.png');
       width: 21vw;
       height: 20vw;
-      margin-top: 10%;
+      margin-top: 2%;
     }
 
     .image_here:hover {
       background-image: asset-data-url('hover.png');
       width: 21vw;
       height: 20vw;
-      margin-top: 10%;
+      margin-top: 2%;
     }
 
     h3 {
@@ -131,68 +128,72 @@
       text-align: center;
     }
 
-    .img1 {
-      background-image: asset-data-url('r1.jpg');
-      width: 25vw;
-      height: 20vw;
-    }
+    .second_row {
+      .mission {
+       background-color: #1E8BC3;
+        p {
+          text-align: justify;
+          color: white;
+          padding-bottom: 4px;
+        }
+      }
+      .tracy {
+        background-color: #ef4836;
+        padding: 20px;
+        p {
+          padding-left: 50px;
+          font-size: 1.2em;
+        }
 
-    .img1:hover {
-      background-image: asset-data-url('o1.jpg');
-      width: 25vw;
-      height: 20vw;
-    }
+        .ted {
+          display: none;
+        }
+        
+       }
 
-    .img2 {
-      background-image: asset-data-url('r2.jpg');
-      width: 25vw;
-      height: 20vw;
-    }
+       .tracy:hover {
+        background-color: #BF55EC;
+        
+        .ted {
+          display: block;
+        }
 
-    .img2:hover {
-      background-image: asset-data-url('o2.jpg');
-      width: 25vw;
-      height: 20vw;
-    }
+        .mcconnel {
+          display: none;
+        }
+       }
 
-    .img3 {
-      background-image: asset-data-url('r3.jpg');
-      width: 25vw;
-      height: 20vw;
-    }
+       .mother {
+        background-image: asset-data-url('mother.jpg');
+        height: 150px;
+       }
 
-    .img3:hover {
-      background-image: asset-data-url('o3.jpg');
-      width: 25vw;
-      height: 20vw;
-    }
+       .mother:hover {
+        background-image: asset-data-url('ted.jpg');
+        height: 150px;
+       }    
+      }
 
-     .img4{
-      background-image: asset-data-url('r8.jpg');
-      width: 25vw;
-      height: 20vw;
-    }
+      .s1_about {
+        height: 200px;
+        margin-top: 3%;
 
-    .img4:hover {
-      background-image: asset-data-url('r7.jpg');
-      width: 25vw;
-      height: 20vw;
-    }
-
-     .img5 {
-      background-image: asset-data-url('r9.jpg');
-      width: 25vw;
-      height: 30vw;
-    }
-    .img5:hover {
-      background-image: asset-data-url('o4.jpg');
-      width: 25vw;
-      height: 30vw;
-    }
-
-   
-
+        .abouts {
+          p {
+            text-align: justify;
+            color: #0cd0a0;
+            font-size: 1.2vw;
+          }
+        }
+       }
 }
 
+#contact {
+  background-image: url('exclusive_paper.png');
 
-
+  .contact {
+    background-color: #D2527F;
+    height: 300px;
+    margin-top: 3%;
+  }
+}
