@@ -1,17 +1,34 @@
-<div class="row">
-</div>
 <div class="map">
   <div class="row blackop">
+    <div class="col-md-6 move_add">
+      <div class="row">
+        <div class="col-md-3">
+         <center><%= image_tag "k2.png" %> </center>
+        </div>
+        <div class="col-md-9 add">
+            #1620 Prince David Loyola <br />Heights, Katipunan, Quezon City
+       </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+         <center><%= image_tag "k1.png" %> </center>
+        </div>
+        <div class="col-md-9 add">
+           raphael.alampay@gmail.com <br /> kathleenlogmao@gmail.com 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+         <center><%= image_tag "k3.png" %> </center>
+        </div>
+        <div class="col-md-9 add">
+           Tel: 638-4882 <br>
+           Cell: 09173465949
+        </div>
+      </div>
+    </div>
     <div class="col-md-6">
-      <div class="row">
-         <%= image_tag "k2.png" %>  <span class="add">ADDRESS: #1620 Prince David Loyola Heights, Katipunan, Quezon City</span> 
-      </div>
-      <div class="row">
-         <%= image_tag "k1.png" %>  <span class="add">EMAIL: raphael.alampay@gmail.com / kathleenlogmao@gmail.com </span> 
-      </div>
-      <div class="row">
-         <%= image_tag "k3.png" %> <span class="add">TELEPHONE NUMBER: 638-4882 </span> 
-      </div>
+      <%= render partial: "shared/message" %>
     </div>
   </div>
 </div>

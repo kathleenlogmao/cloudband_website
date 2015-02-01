@@ -40,8 +40,6 @@
   background: linear-gradient(to bottom,  #e0f2f1 2%,#009688 99%,#009688 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f2f1', endColorstr='#009688',GradientType=0 ); /* IE6-9 */
 
-
-
   .responsive {
    .lefts img{
      margin-top: 1px;
@@ -55,7 +53,7 @@
     margin-left: 45px;
    }
 
-    .services {
+   .services {
     padding: 30px;
     padding-left: 10%;
     padding-top: 20px;
@@ -214,8 +212,19 @@
     color: white;
    }
 
-   .add {
+   .move_add {
+    padding-left: 100px;
+    padding-top: 100px;
+   }
 
+   .add {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 1.1em;
+   }
+
+   .ready {
+    margin-top: 16%;
    }
 
 }
