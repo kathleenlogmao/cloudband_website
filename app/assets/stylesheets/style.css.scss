@@ -5,8 +5,9 @@
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+
   img {
-    width: 45vw;
+    width: 50vw;
     margin-top: 28%;
     margin-left: -10%;
     padding: 10px;
@@ -31,74 +32,58 @@
 }
 
 #service {
-  background: #e0f2f1; /* Old browsers */
-  background: -moz-linear-gradient(top,  #e0f2f1 2%, #009688 99%, #009688 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#e0f2f1), color-stop(99%,#009688), color-stop(100%,#009688)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #e0f2f1 2%,#009688 99%,#009688 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #e0f2f1 2%,#009688 99%,#009688 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #e0f2f1 2%,#009688 99%,#009688 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #e0f2f1 2%,#009688 99%,#009688 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f2f1', endColorstr='#009688',GradientType=0 ); /* IE6-9 */
+  background-image: asset-data-url('exclusive_paper.png');
 
   .responsive {
    .lefts img{
      margin-top: 1px;
-     width: 38vw;
+     width: 80vw;
      margin-left: -4%;
    }
-
-   .leftz img {
-    margin-top: 1px;
-    width: 38vw;
-    margin-left: 45px;
-   }
-
    .services {
-    padding: 30px;
-    padding-left: 10%;
+    padding-left: 13%;
     padding-top: 20px;
     margin-bottom: 0px;
-    color: #07775b;
-    font-size: 1.1em;
+    color: #0cd0a0;
+    font-size: 1.1vw;
     text-align: justify;
   }
 
   }
   .our_services {
     background-color: #e2e2e2;
-    padding-bottom: 30px;
+    padding-bottom: 14px;
     padding-top: 20px;
+
+
 
     h1 {
       color: black;
       font-family: 'Muli', sans-serif;
       font-weight: bold;
       text-align: center;
+      font-size: 3em;
     }
 
     h4 {
       color: black;
       font-family: 'Muli', sans-serif;
       text-align: center;
+       font-size: 1em;
     }
 
     .titles {
       text-align: center;
       color: #1abc9c;
-    }
-
-    .titles1 {
-      text-align: center;
-      font-size: 1.5em;
-      padding-top: 30px;
-      color: #1abc9c;
+      font-size: 1em;
     }
   }
+  
   .consult {
     background-color: black;
     color: white;
     padding: 8px;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     padding-bottom: 2px;
     .wk {
       font-size: 12px;
@@ -112,67 +97,83 @@
 
 #about_us {
   background-image: asset-data-url('exclusive_paper.png');
-
-   .image_here {
-      background-image: asset-data-url('sample.png');
-      width: 21vw;
-      height: 20vw;
-      margin-top: 2%;
-    }
-
-    .image_here:hover {
-      background-image: asset-data-url('hover.png');
-      width: 21vw;
-      height: 20vw;
-      margin-top: 2%;
+   .teams {
+    margin-top: 3%;
+    font-size: 3em;
+   }
+   .image_here_happy img{
+      width: 20vw;
     }
 
     h1 {
       text-align: center;
-      margin-top: 2%;
+      margin-top: 3%;
       font-weight: 900;
       margin-bottom: 1%;
+      font-size: 3em;
     }
     h3 {
       text-align: center;
+      font-size: 25px;
+    }
+
+    .name {
       color: #0cd0a0;
     }
 
     h5 {
       text-align: center;
+       font-size: 15px;
+    }
+
+    h4{
+      font-weight: 900;
+      text-decoration-color: #0cd0a0;
+      margin-top: 3%;
+      font-size: 1.2em;
     }
 
     .about2 {
         p {
         text-align: justify;
-        font-size: 1.2em;
         color: #0cd0a0;
+        font-size: 1.2em;
       }
     }
 
       .about3 {
           p {
           text-align: justify;
-          font-size: 1.2em;
           color: #0cd0a0;
+          font-size: 1.2em;
         }
       }
 
       .about4 {
           p {
           text-align: justify;
-          font-size: 1.2em;
           color: #0cd0a0;
+          font-size: 1.2em;
+        }
+
+        li {
+          color: #0cd0a0;
+          font-size: 1.2em;
         }
       }
 
-      .m1 img{
-        width: 13vw;
+      .slide2 {
+        margin-top: 2%;
       }
 
-      .v1 img{
-        width: 13vw;
-        padding-top: 10px;
+      .team {
+        h1 {
+          text-align: center;
+          margin-top: 5%;
+          font-weight: 900;
+          margin-bottom: 1%;
+          font-size: 3em;
+        }
       }
 } 
 
@@ -180,14 +181,6 @@
   background-image: asset-data-url('exclusive_paper.png');
 
   .contact {
-    h1 {
-      text-align: center;
-      font-weight: 900;
-      margin-left: 4%;
-      margin-top: 3%;
-       color: #0cd0a0;
-       }
-
     height: 300px;
     margin-top: 3%;
   }
@@ -198,7 +191,7 @@
    -moz-background-size: cover;
    -o-background-size: cover;
     background-size: cover;
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
    }
@@ -229,9 +222,3 @@
 
 }
 
-.team {
-  padding-top: 28px;
-  h1 {
-    font-size: 4em;
-  }
-}
