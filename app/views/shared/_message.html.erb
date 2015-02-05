@@ -1,27 +1,28 @@
 <div class="row">
   <h2 class="ready">Ready to get started?</h2>
 </div>
+<div class="showmsg">
+  
+</div>
 <div class="navigation1" id="navigation1">
   <a class="nav-toggler1" href="#" id="navToggler1">
     <span class="show-nav1 btn btn-default">MESSAGE US</span>
     <span class="hide-nav1">&times;</span>
   </a>
   <div class="navigation__inner1 home_service1">
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label>Name</label>
-        <input class="form-control" placeholder="Enter Name">
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input class="form-control" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea class="form-control txtar" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-default sub">Submit</button>
-  </form>
+    <div class="form-group input_text">
+      <label>Name</label>
+      <input class="form-control" placeholder="Enter Name" id="name">
+    </div>
+    <div class="form-group input_text">
+      <label>Email</label>
+      <input class="form-control" placeholder="Enter email" id="email">
+    </div>
+    <div class="form-group input_text">
+      <label>Message</label>
+      <textarea class="form-control txtar input_text" rows="3" id="message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default sub button-submit" id="submit-form">Submit</button>
 </div>
 </div>
 
@@ -35,4 +36,5 @@
     });
   });
 }(jQuery, this, this.document));
+
 </script>
