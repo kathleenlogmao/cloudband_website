@@ -17,3 +17,5 @@
 
 # ignore swp files.
 *.swp
+
+.env
