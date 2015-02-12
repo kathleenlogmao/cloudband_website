@@ -25,7 +25,7 @@ $(document).ready(function() {
         $message.val('');
 
         $('#load_page').toggle();
-        toastr.success('Thank you for the message! :)');
+        toastr.success('Thank you for the message!').addClass('special');
       }, 
 
       error: function(error) {
@@ -35,7 +35,7 @@ $(document).ready(function() {
           mali = mali+"<li>"+item+"</li>";
         });
         mali = mali+"</ul>";
-        toastr.error('Error sending message! Please check your fields!' + mali);
+        toastr.error('Error sending message! Please check your fields!' + mali).addClass('special');
       }
 
     }); 

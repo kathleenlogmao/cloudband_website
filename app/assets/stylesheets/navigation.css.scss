@@ -32,7 +32,6 @@
   padding: .5em;
   position: absolute;
   text-decoration: none;
-
 }
  
 .nav-toggler span {
@@ -127,6 +126,9 @@
   padding-left: 10px;
   display: none;
 }
+.icon-bar {
+  color: white;
+}
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
@@ -165,7 +167,8 @@
   text-decoration: none;
 
 }
- 
+
+
 .nav-toggler span {
   position: relative;
   z-index: 5;
