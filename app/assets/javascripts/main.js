@@ -6,11 +6,14 @@ $(document).ready(function() {
   var $showmsg = $('.showmsg');
 
   $('#submit-form').on('click', function() {
+
      var messageme = {
       name: $name.val(), 
       email: $email.val(), 
       message: $message.val(), 
     };
+
+    $('#load_page').toggle();
 
     $.ajax({
       type: 'POST',
@@ -21,11 +24,18 @@ $(document).ready(function() {
         $email.val('');
         $message.val('');
 
+        $('#load_page').toggle();
         toastr.success('Thank you for the message! :)');
       }, 
 
       error: function(error) {
-        toastr.error('Error sending message! Please check your fields!');
+        $('#load_page').toggle();
+        var mali = "<ul>";
+        $.each(error.responseJSON, function(index, item) {
+          mali = mali+"<li>"+item+"</li>";
+        });
+        mali = mali+"</ul>";
+        toastr.error('Error sending message! Please check your fields!' + mali);
       }
 
     }); 
