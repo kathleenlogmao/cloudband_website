@@ -10,7 +10,11 @@ class PagesController < ApplicationController
                           msg_content: params[:message])
 
     if(message.save)
+
+      ContactMailer.message_email(message).deliver
+
       render :json => message
+
     else
       render :json => message.errors, :status => :unprocessable_entity
     end

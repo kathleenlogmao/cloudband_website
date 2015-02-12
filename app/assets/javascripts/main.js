@@ -6,7 +6,7 @@ $(document).ready(function() {
   var $showmsg = $('.showmsg');
 
   $('#submit-form').on('click', function() {
-    var messageme = {
+     var messageme = {
       name: $name.val(), 
       email: $email.val(), 
       message: $message.val(), 
@@ -21,13 +21,14 @@ $(document).ready(function() {
         $email.val('');
         $message.val('');
 
-        alert('THANKS!');
+        toastr.success('Thank you for the message! :)');
       }, 
 
       error: function(error) {
-        alert('ERROR');
+        toastr.error('Error sending message! Please check your fields!');
       }
 
-    });
+    }); 
+
   });
 });

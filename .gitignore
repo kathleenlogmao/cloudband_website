@@ -17,5 +17,6 @@
 
 # ignore swp files.
 *.swp
-
+/config/environments/development.rb
+/config/environments/production.rb
 .env

@@ -16,3 +16,4 @@
 //= require_tree .
 //= require bootstrap
 //= require main
+//= require toastr
