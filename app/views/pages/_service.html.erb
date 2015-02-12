@@ -56,6 +56,9 @@
 
 <script>
   $(document).ready(function() {
-     $('.imgvw').fadeToggle(1000).fadeToggle(1000);
+    $('#cloudband_services').on("pageload",function(){
+      alert("pageload event fired!");
+    });
+      
   });
 </script>
