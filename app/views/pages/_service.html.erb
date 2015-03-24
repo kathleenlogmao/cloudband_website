@@ -12,18 +12,44 @@
     <div class="col-md-6">
       <h1>OUR SERVICES</h1>
       <h4>Technology for a connected world starts with the right systems</h4>
-        <div class="col-md-4 imgvw">
+        <div class="col-md-4 imgvw myModal">
           <center><%= image_tag "mac.png" %></center><br />
           <div class="titles"> Custom Web Based Database Driven Systems Development</div>
         </div>
-        <div class="col-md-4 imgvw">
+          <div id="modalcontent" class="modal">
+           <h4>
+            <b>Custom Web Based Database Driven Systems Development</b>
+           </h4>
+           <p>
+            We're developing a custom website for you. 
+           </p>
+          </div>
+
+        <div class="col-md-4 imgvw myModal">
           <center><%= image_tag "02.png" %></center> <br />
           <div class="titles"> Android Mobile Development</div>
         </div>
-        <div class="col-md-4 imgvw">
+          <div id="modalcontent" class="modal">
+           <h4>
+            <b>Android Mobile Development</b>
+           </h4>
+           <p>
+            KAT
+           </p>
+          </div>
+
+        <div class="col-md-4 imgvw myModal">
           <center><%= image_tag "01.png" %></center><br />
           <div class="titles"> Web Design </div>
         </div>
+         <div id="modalcontent" class="modal">
+           <h4>
+            <b>Web Design</b>
+           </h4>
+           <p>
+            We're developing a custom website for you. 
+           </p>
+          </div>
     </div>
     <div class="col-md-6">
       <h1>OUR PRODUCTS</h1> 
@@ -59,6 +85,12 @@
     $('#cloudband_services').on("pageload",function(){
       alert("pageload event fired!");
     });
-      
+
+    $('.myModal').click(function(){
+      // var classes = $('#modalcontent').attr('class');
+      // alert(classes);
+      // $("." + classes).rsModal();
+      $(this).next('.modal').rsModal();
+    }); 
   });
 </script>
