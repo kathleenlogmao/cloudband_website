@@ -12,8 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require jquery-ui
+//= require jquery.risingSun
+//= require common
 //= require bootstrap
 //= require main
 //= require toastr
+//= require semantic-ui
+//= require functions
+//= require animate
+

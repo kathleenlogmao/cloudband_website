@@ -1,37 +1,186 @@
-<div id="fullpage">
-  <div id="home" class="section">
-    <%= render partial: "home" %>
-  </div>
-  <div id="service" class="section">
-    <%= render partial: "service" %>
-  </div>
-  <div id="about_us" class="section">
-    <div class="slide" id="slide1">
-      <%= render partial: "shared/slide1" %>
+<div id="topArea">
+  <div class="homepage">
+    <div class="white">
+      <center>
+        <h4> Technology for a connected world </h4> 
+        <div id="auther">
+          Engineered Software that is.. <br />
+          Continuous. High Quality. Networked. Responsive
+        </div>
+        <div id="down" class="al">
+          <a href="#sceneHowto">
+            <%= image_tag "down.png", height: "27", width: "221" %>
+          </a>
+        </div>
+      </center>
     </div>
-    <div class="slide" id="slide2">
-      <%= render partial: "shared/slide2" %>
-    </div>
-  </div>
-  <div id="contact" class="section">
-    <%= render partial: "contact" %>    
   </div>
 </div>
 
+<div id="sceneHowto">
+  <div class="ui segment">
+    <p class="services_p">
+      "All products and services developed and maintained by Cloudband are network enabled and mobile friendly. This means you gain access to your information be it via the Internet or your own personal internal network. Cloudband prides itself in providing the connectivity that your company and its systems need."
+    </p>
+  </div>
+
+  <div class="row">
+    <h2>Our Services</h2>
+    <h4>Technology for a connected world starts with the right systems</h4>
+    <div class="col-md-3"></div>
+    <div class="col-md-2 imgvw">
+      <center><%= image_tag "mac.png" %></center><br />
+      <div class="titles"> Custom Web Based Database Driven Systems Development</div>
+    </div>
+
+    <div class="col-md-2 imgvw">
+      <center><%= image_tag "02.png" %></center> <br />
+      <div class="titles"> Android Mobile Development</div>
+    </div>
+    
+    <div class="col-md-2 imgvw">
+      <center><%= image_tag "01.png" %></center><br />
+      <div class="titles"> Web Design </div>
+    </div>
+    <div class="col-md-3"></div>
+    
+  </div>
+
+  <div class="row">
+    <h2>Our Products</h2> 
+    <h4>Ready to use software solutions for your company</h4>
+      <div class="col-md-3"></div>
+      <div class="col-md-2 imgvwl imgvw">
+        <center><%= image_tag "loan.png" %></center><br />
+        <div class="titles">Micro Loans Management System</div>
+      </div>
+      <div class="col-md-2 imgvw">
+        <center><%= image_tag "user.png" %></center><br />
+        <div class="titles"> Personnel System</div>
+      </div>
+      <div class="col-md-2 imgvw">
+        <center><%= image_tag "payroll.png" %></center> <br />
+        <div class="titles">Payroll System</div>
+      </div>
+      <div class="col-md-3"></div>
+     
+  </div>
+</div>
+
+<div id="scene1">
+  <div class="about">
+    <div class="black">
+      <div class="row abt">
+        <div class="col-md-4">
+          <h3>About Us</h3>
+          <p class="textbox">
+           Cloudband Solutions Co. is a Filipino based technology company that creates information systems through the use of open source technology. The company started in August, 2014 with three core members. Currently, it develops and maintains IT projects in the fields of finance, shipping and office administration.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3>Mission</h3>
+          <p class="textbox">
+            “Cloudband Solutions Co. aims to provide custom networked systems engineered with the latest open source technology that helps businesses and organizations achieve their goals and ensures solutions that withstands the test of time through continuous improvement and high availability.”
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3>Vision</h3>
+          <p class="textbox">
+            “Cloudband Solutions Co. envisions itself to be the best Filipino owned, pure open source solutions provider for both local and international organizations and to be known as an advocacy of the kaizen principle.”
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="ourteam">
+  <h2>Our Team</h2>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-3">
+      <div class="ui card">
+        <div class="ui move right reveal image">
+          <div class="visible content">
+            <%= image_tag "happy.JPG"%>
+          </div>
+          <div class="hidden content">
+            <%= image_tag "lani.JPG" %>
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">Raphael B. Alampay</div>
+          <div class="meta">
+            <span class="date">Managing Partner / Senior Programmer</span>
+          </div>
+        </div>
+        <div class="extra content">
+          Email: raphael.alampay@gmail.com <br />
+          Tel: 364-48-82
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="ui card">
+        <div class="ui move right reveal image">
+          <div class="visible content">
+            <%= image_tag "kat.JPG"%>
+          </div>
+
+          <div class="hidden content">
+            <%= image_tag "lani.JPG" %>
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">Kathleen Zita Gayle G. Logmao</div>
+          <div class="meta">
+            <span class="date">Managing Partner / Web Designer</span>
+          </div>
+        </div>
+        <div class="extra content">
+          Email: kathleenlogmao@gmail.com <br />
+          Tel: 364-48-82
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="ui card">
+        <div class="ui move right reveal image">
+          <div class="visible content">
+            <%= image_tag "lani.JPG"%>
+          </div>
+
+          <div class="hidden content">
+            <%= image_tag "happy.JPG" %>
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">Lani Marie M. Gonzalez</div>
+          <div class="meta">
+            <span class="date">Office Manager</span>
+          </div>
+        </div>
+        <div class="extra content">
+          Email: lanimarie.gonzalez@gmail.com <br />
+          Tel: 364-48-82
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="scene2">
+  <div class="black">
 
 
-<script>
-$(document).ready(function() {
-    $('#fullpage').fullpage(
-      {
-        anchors: ['cloudband_home', 'cloudband_services', 'about_cloudband', 'contact_cloudband'],
-        menu: '#menu',
-        scrollingSpeed: 1000,
-        navigation: false,
-        verticalCentered: false,
-        controlArrowColor: '#2ecc71'
+  </div>
 
-      });
-});
-</script>
+
+</div>
+
+
 

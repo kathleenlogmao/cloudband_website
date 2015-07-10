@@ -10,7 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require jquery.fullPage
  *= require_self
  *= require style
  *= require navigation
@@ -18,14 +17,22 @@
  *= require mediaqueries
  *= require icomoon-free/style
  *= require toastr
+ *= require stylerising
+ *= require common
+ *= require import
+ *= require font-awesome
 
 
  */
 
 @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "semantic-ui";
 
 
-.row {
+/* .row {
   margin: 0;
 }
 
@@ -46,4 +53,4 @@ body {
   font-family: 'Muli', sans-serif;
 
 }
-
+ */

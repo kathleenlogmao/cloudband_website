@@ -1,4 +1,4 @@
-#home {
+/* #home {
   background-image: asset-data-url('3.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -237,7 +237,10 @@
 
 }
 
-#load_page {
+  */
+
+
+  #load_page {
   display: none;
   position: absolute;
   top: 0;
@@ -247,7 +250,7 @@
   z-index: 10;
   background-color: rgba(0,0,0,0.5); /*dim the background*/
 
-  img {
+   img {
     width: 10%;
     margin-top: 16%;
   }
