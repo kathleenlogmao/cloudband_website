@@ -680,6 +680,36 @@ and (orientation : landscape) {
     height: 800px!important;
   }
 
+  .ui.card:last-child {
+    margin-top: 5%;
+  }
+
+  #scene2 {
+    margin-top: 10%!important;
+    height: 670px!important;
+
+    h3 {
+      font-size: 20px!important;
+    }
+
+    .ui.form {
+      margin-top: 10%!important;
+    }
+
+    .details {
+      font-size: 15px!important;
+      margin-top: 10%!important;
+    }
+
+    .fa.fa-mobile {
+     font-size: 20px;
+     padding-left: 3px;
+     padding-right: 5px;
+     color: #3498db;
+  }
+
+  }
+
   }
 
 

@@ -136,7 +136,7 @@ body{
   }
 
   .abt {
-    padding-top: 9%;
+    padding-top: 7%;
   }
 
 }
@@ -159,52 +159,51 @@ body{
 
 #scene2{
   position: relative;
-  height: 400px;
-  background-image: asset-data-url('prince1.png');
+  height: 450px;
+  background-image: asset-data-url('pd.png');
   margin-top: 3%;
 }
-#scene2 h2{
-  position: absolute;
-  top: 50px;
+#scene2 h3{
   width: 100%;
   text-align: center;
-  font-size:58px;
+  color: #217C7E;
+  font-size:30px;
   font-weight: bold;
+  margin-top: 4%;
 }
-#scene2 #timerclick{
-  position: absolute;
-  top: 250px;
-  left: 430px;
+
+.ui.form {
+  margin-top: 12%;
 }
-#scene2 #callback1{
-  position: absolute;
-  top: 125px;
-  left: 735px;
-  display: none;
-}
-#scene2 #callback2{
-  position: absolute;
-  top: 175px;
-  left: 720px;
-  display: none;
-}
-#scene2 #callback3{
-  position: absolute;
-  top: 220px;
-  left: 640px;
-  display: none;
-}
-#scene2 #timer{
-  position: absolute;
-  top: 150px;
-  left: 345px;
-  display: none;
-}
-#scene2 #tx4{
-  top: 480px;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
+
+.details {
+  background-color: rgba(255,255,255, 0.6);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  padding: 10px;
+  margin-top: 12%;
+  font-size: 23px;
+  .fa.fa-phone {
+    padding-right: 2px;
+    color:#FF3333;
+  }
+
+  .fa.fa-envelope-o {
+    color: #2ecc71;
+  }
+
+  .fa.fa-mobile {
+   font-size: 30px;
+   padding-left: 3px;
+   padding-right: 5px;
+   color: #3498db;
+  }
+
+  .fa.fa-map-marker {
+    padding-right: 7px;
+    padding-left: 2px;
+    color: #9b59b6;
+  }
 }
 
 
