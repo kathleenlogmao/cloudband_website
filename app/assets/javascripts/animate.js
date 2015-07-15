@@ -11,6 +11,10 @@ $(function() {
       $('.navbar-wrapper').css('padding', '5px');
       $('.navbar-wrapper').css('border-bottom', '1px solid #e2e2e2');
       $('.navbar-toogle').css('margin-top', '17px');
+      $('.logo img').attr({
+        'src': 'http://localhost:3000/assets/logo.png'
+      });
+      $('.logo img').css('margin-top', '2px');
     }
     else if(ypos < 50) {
       $('.navbar-wrapper').css('background-color', 'transparent');
@@ -18,6 +22,10 @@ $(function() {
       $('.navbar-wrapper a').css('color', '#fff');
       $('.navbar-inverse').css('padding-top', '50px');
       $('.navbar-wrapper').css('border-bottom', 'transparent');
+      $('.logo img').attr({
+        'src': 'http://localhost:3000/assets/logowhite.png'
+      });
+      $('.logo img').css('margin-top', '-5px');
       
       console.log("Making transparent...");
     }
