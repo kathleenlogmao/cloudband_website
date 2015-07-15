@@ -712,4 +712,34 @@ and (orientation : landscape) {
 
   }
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  #topArea {
+
+    h4 {
+      text-align: center;
+      font-size: 30px!important;
+      top: 200px!important;
+    }
+
+    #auther {
+      font-size: 20px!important;
+      top: 220px!important;
+    }
+
+    #down{
+      top: 400px!important;
+    }
+
+
+  }
+
+
+
+}
+
+
 
