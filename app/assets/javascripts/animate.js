@@ -12,7 +12,7 @@ $(function() {
       $('.navbar-wrapper').css('border-bottom', '1px solid #e2e2e2');
       $('.navbar-toogle').css('margin-top', '17px');
       $('.logo img').attr({
-        'src': 'http://localhost:3000/assets/logo.png'
+        'src': 'http://www.cloudbandsolutions.com/assets/logo-d9d35697d3699c1463ffabe49f81bba8.png'
       });
       $('.logo img').css('margin-top', '2px');
     }
