@@ -17,8 +17,9 @@
 //= require common
 //= require bootstrap
 //= require main
+//= require animate
 //= require toastr
 //= require semantic-ui
 //= require functions
-//= require animate
+
 
