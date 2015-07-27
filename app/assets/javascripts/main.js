@@ -6,7 +6,7 @@ $(document).ready(function() {
   var $showmsg = $('.showmsg');
 
   $('#submit-form').on('click', function() {
-
+    $('.load_page').toggle();
      var messageme = {
       name: $name.val(), 
       email: $email.val(), 
@@ -24,7 +24,7 @@ $(document).ready(function() {
         $email.val('');
         $message.val('');
 
-        $('#load_page').toggle();
+        $('.load_page').toggle();
         toastr.success('Thank you for the message!').addClass('special');
       }, 
 
@@ -35,6 +35,7 @@ $(document).ready(function() {
           mali = mali+"<li>"+item+"</li>";
         });
         mali = mali+"</ul>";
+        $('.load_page').toggle();
         toastr.error('Error sending message! Please check your fields!' + mali).addClass('special');
       }
 
