@@ -236,4 +236,63 @@ body{
   }
 }
 
+#load_page {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+
+   img {
+    width: 10%;
+    margin-top: 16%;
+  }
+
+  h4 {
+    color: white;
+  }
+}
+
+.special {
+  font-size: 15px;
+}
+
+// NAVIGATION
+
+.navbar-inverse {
+  background-color: transparent;
+  padding-top: 50px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  margin-left: 20px;
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+
+.logo img{
+  width: 300px;
+  padding-left: 20px;
+  margin-top: -5px;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 30px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #999999!important;
+}
+
 

@@ -97,9 +97,6 @@ GEM
       activesupport (>= 3.2, < 5)
     hike (1.2.3)
     i18n (0.7.0)
-    icomoon-rails (0.1.0)
-      railties (>= 3.1.1)
-      sass-rails (>= 3.1.1)
     inherited_resources (1.6.0)
       actionpack (>= 3.2, < 5)
       has_scope (~> 0.6.0.rc)
@@ -215,7 +212,6 @@ DEPENDENCIES
   devise
   font-awesome-sass
   haml
-  icomoon-rails
   jbuilder (~> 2.0)
   jquery-rails
   jquery-ui-rails
