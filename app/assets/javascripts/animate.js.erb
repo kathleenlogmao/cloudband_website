@@ -4,8 +4,12 @@ $(function() {
     var top = document.getElementsByClassName('navbar-wrapper');
     var ypos = window.pageYOffset;
     var r_a = 0.2;
+    var mq = window.matchMedia('all and (max-width: 700px)');
 
     if(ypos > 90) {
+      $('.drawer-hamburger').css('margin', '10px');
+      $('.drawer-hamburger').css('height', '0');
+      $('.sr-only').css('color', 'black');
       $('.navbar-wrapper').css('background-color', '#fff');
       $('.navbar-wrapper a').css('color', 'black');
       $('.navbar-wrapper').css('padding', '5px');
@@ -15,6 +19,13 @@ $(function() {
         'src': "<%= asset_path('logo.png') %>"
       });
       $('.logo img').css('margin-top', '2px');
+
+      if (mq.matches) {
+        $('.navbar-wrapper').css('background-color', 'transparent');
+        $('.navbar-wrapper').css('border-bottom', '1px solid transparent');
+      } else {
+        
+      }
     }
     else if(ypos < 50) {
       $('.navbar-wrapper').css('background-color', 'transparent');

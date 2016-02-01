@@ -39,7 +39,7 @@ body{
   width: 100%;
   text-align: center;
   display: none;
-  top: 430px!important;
+  top: 470px!important;
 }
 
 #services {
@@ -51,22 +51,23 @@ body{
 
 #auther{
   font-size:18px;
-  color: #F3EFE0;
+  color: white;
   text-align: center;
   position: relative;
-  top: 283px!important;
+  top: 297px!important;
+  letter-spacing: 1px;
 }
 
 #sceneHowto {
   margin-bottom: 5%;
   .ui.segment {
-    background-image: asset-data-url('footer_lodyas.png');
+    background-image: asset-data-url('ignasi_pattern_s.png');
     border-radius: 0;
   }
   .services_p {
-    color: white;
+    color: #888;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 21px;
     padding-top: 110px;
     padding-bottom: 60px;
   }
@@ -79,10 +80,9 @@ body{
     margin-top: 2%;
   }
 
-  h4 {
+  h3 {
     text-align: center;
-    color: #217C7E;
-    font-weight: bold;
+    color: #888;
   }
 
   .titles {
@@ -113,10 +113,8 @@ body{
 }
 
 #scene1{
-  height: 400px;
   padding-top: 2%;
   h3 {
-    text-align: center;
     font-size: 3em;
     color: #FF3333;
     font-weight: bold;
@@ -126,10 +124,16 @@ body{
   p {
     font-size: 16px;
     color: #2c3e50;
+    text-align: justify;
   }
 
   .abt {
     padding-top: 7%;
+  }
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
 }
@@ -151,9 +155,13 @@ body{
 }
 
 #scene2{
-  position: relative;
-  height: 450px;
-  background-image: asset-data-url('pd.png');
+  background-image: asset-data-url('telephon.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   margin-top: 3%;
 }
 #scene2 h3{
@@ -162,41 +170,31 @@ body{
   color: #217C7E;
   font-size:30px;
   font-weight: bold;
-  margin-top: 4%;
+  margin-top: 7%;
 }
 
 .ui.form {
-  margin-top: 12%;
+  border: 1px solid #888;
+  padding: 20px;
+  width: 60%;
+  margin-top: 45px;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .details {
-  background-color: rgba(255,255,255, 0.6);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-  padding: 10px;
-  margin-top: 12%;
-  font-size: 23px;
-  .fa.fa-phone {
-    padding-right: 2px;
-    color:#FF3333;
-  }
-
-  .fa.fa-envelope-o {
-    color: #2ecc71;
-  }
-
-  .fa.fa-mobile {
-   font-size: 30px;
-   padding-left: 3px;
-   padding-right: 5px;
-   color: #3498db;
-  }
-
-  .fa.fa-map-marker {
-    padding-right: 7px;
-    padding-left: 2px;
-    color: #9b59b6;
-  }
+  padding-top: 50px;
+}
+.line {
+  position: absolute;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #e6e6e6;
+  display: table;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 135px;
 }
 
 .white {
@@ -292,7 +290,39 @@ body{
 }
 
 .navbar-toggle .icon-bar {
-  background-color: #999999!important;
+  background-color: #e2e2e2!important;
 }
 
+.for_non_mobile {
+  display: block!important;   
+}
+
+.for_mobile {
+  display: none;
+}
+
+
+// ----- DRAWER -----
+
+.drawer-default .drawer-menu-item {
+  padding: 0!important;
+}
+
+.drawer-navbar-default .drawer-menu-item a {
+  color: white!important;
+  font-family: 'Muli', sans-serif!important;
+  font-size: 16px!important;
+}
+
+.drawer-main {
+  width: 220px!important;
+}
+
+.drawerlogo {
+  img {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+}
 

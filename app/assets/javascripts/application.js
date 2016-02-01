@@ -21,5 +21,6 @@
 //= require toastr
 //= require semantic-ui
 //= require functions
-
-
+//= require jquery.drawer.min
+//= require iscroll
+//= drawerkat

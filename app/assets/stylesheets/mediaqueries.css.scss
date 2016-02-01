@@ -3,12 +3,12 @@
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
 {
-  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
- 
-  } 
+  .navbar-header {
+    display: none;
+  }
 
   .logo img{
-    width: 250px;
+    display: none;
   }
   #topArea {
     height: 600px!important;
@@ -38,17 +38,12 @@
     }
   }
 
-  #scene1 {
-    height: 800px!important;
-  }
-
   .ui.card:last-child {
     margin-top: 5%;
   }
 
   #scene2 {
     margin-top: 10%!important;
-    height: 670px!important;
 
     h3 {
       font-size: 20px!important;
@@ -56,29 +51,132 @@
 
     .ui.form {
       margin-top: 10%!important;
+      width: 100%;
     }
 
     .details {
       font-size: 15px!important;
-      margin-top: 10%!important;
+      margin-top: 5%!important;
+    }
+  }
+
+  .for_non_mobile {
+    display: none!important;   
+  }
+
+  .for_mobile {
+    display: block!important;
+  }
+}
+
+/* Portrait and Landscape -- GALAXY s3 */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait and Landscape -- GALAXY S5*/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    
+}
+
+// ---- iphone 6 ----
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .for_non_mobile {
+      display: none!important;   
     }
 
-    .fa.fa-mobile {
-     font-size: 20px;
-     padding-left: 3px;
-     padding-right: 5px;
-     color: #3498db;
-  }
+    .for_mobile {
+      display: block!important;
+    }
 
-  }
+    #topArea {
+      height: 700px!important;
 
-  }
+      h4 {
+        text-align: center;
+        font-size: 20px!important;
+        top: 150px!important;
+      }
+
+      #auther {
+        font-size: 13px!important;
+        top: 160px!important;
+      }
+
+      #down{
+        top: 320px!important;
+      }
+
+      #sceneHowto
+        .services_p {
+          color: white;
+          text-align: center;
+          font-size: 1em!important;
+          padding-top: 40px!important;
+        
+        }
+    }
+}
+
+// ---- iphone 6 plus ---
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .for_non_mobile {
+      display: none!important;   
+    }
+
+    .for_mobile {
+      display: block!important;
+    }
+
+    #topArea {
+      height: 750px!important;
+
+      h4 {
+        text-align: center;
+        font-size: 25px!important;
+        top: 200px!important;
+      }
+
+      #auther {
+        font-size: 15px!important;
+        top: 210px!important;
+      }
+
+      #down{
+        top: 400px!important;
+      }
+
+      #sceneHowto
+        .services_p {
+          color: white;
+          text-align: center;
+          font-size: 1em!important;
+          padding-top: 40px!important;
+        
+        }
+    }
+}
 
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-
+  .logo img{
+    display: none;
+  }
   #topArea {
 
     h4 {

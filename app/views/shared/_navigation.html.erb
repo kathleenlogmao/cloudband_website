@@ -1,5 +1,49 @@
-<nav class="row navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="for_non_mobile row navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="for_mobile drawer drawer-left drawer-navbar-default">
+  <header role="banner">
+    <div class="drawer-header">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+    </div>
+    <div class="drawer-main drawer-default">
+      <nav class="drawer-nav" role="navigation">
+        <div class="drawer-brand">
+          <ul class="drawer-menu">
+            <li class="drawerlogo">
+              <%= image_tag "logowhite.png" %>
+            </li>
+            <li class="drawer-menu-item">
+              <%= link_to "#topArea" do %>
+                <i class="home icon"></i>
+                HOME
+              <% end %>
+            </li>
+            <li class="drawer-menu-item">
+              <%= link_to "#sceneHowto" do %>
+                <i class="configure icon"></i>
+                SERVICES 
+             <% end %>
+            </li>
+            <li class="drawer-menu-item">
+              <%= link_to "#scene1" do %>
+              <i class="info icon"></i>
+                ABOUT 
+             <% end %>
+            </li>
+            <li class="drawer-menu-item">
+              <%= link_to "#scene2" do %>
+              <i class="mail icon"></i>
+              CONTACT 
+             <% end %>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div> 
   <div class="navbar-header">
     <button data-toggle="collapse" class="navbar-toggle ocllapsed" type="button" data-target="#bs-example-navbar-collapse-1">
       <span class="sr-only">Toggle navigation</span>
@@ -22,9 +66,9 @@
              <% end %>
            </li>
            <li>  
-                <%= link_to "#sceneHowto" do %>
-                    SERVICES 
-                 <% end %>
+              <%= link_to "#sceneHowto" do %>
+                  SERVICES 
+               <% end %>
              </li>
       
             <li> 
@@ -41,5 +85,41 @@
       </div>
     </div>
   </div>
-</nav>
+</nav>        
 
+
+<script type="text/javascript">
+  $(document).ready(function() {
+   $(".drawer").drawer();
+  });
+
+  $(".drawer").drawer({
+    apiToggleClass: "element"
+  });
+
+
+  $('.element').on(function() {
+    $('.drawer').drawer('open');
+  });
+
+  // close
+  $('.element').on(function() {
+    $('.drawer').drawer('close');
+  });
+
+  // toggle
+  $('.element').on(function() {
+    $('.drawer').drawer('toggle');
+  });
+
+  // destroy
+  $('.element').on(function() {
+    $('.drawer').drawer('destroy');
+  });
+
+  // Opened
+  $('#element').on('drawer.opened');
+
+  // Closed
+  $('#element').on('drawer.closed');
+</script>
