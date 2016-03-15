@@ -87,39 +87,37 @@
   </div>
 </nav>        
 
-
 <script type="text/javascript">
   $(document).ready(function() {
-   $(".drawer").drawer();
+    $(".drawer").drawer();
+    $(".drawer").drawer({
+      apiToggleClass: "element"
+    });
+
+
+    $('.element').on(function() {
+      $('.drawer').drawer('open');
+    });
+
+    // close
+    $('.element').on(function() {
+      $('.drawer').drawer('close');
+    });
+
+    // toggle
+    $('.element').on(function() {
+      $('.drawer').drawer('toggle');
+    });
+
+    // destroy
+    $('.element').on(function() {
+      $('.drawer').drawer('destroy');
+    });
+
+    // Opened
+    $('#element').on('drawer.opened');
+
+    // Closed
+    $('#element').on('drawer.closed');
   });
-
-  $(".drawer").drawer({
-    apiToggleClass: "element"
-  });
-
-
-  $('.element').on(function() {
-    $('.drawer').drawer('open');
-  });
-
-  // close
-  $('.element').on(function() {
-    $('.drawer').drawer('close');
-  });
-
-  // toggle
-  $('.element').on(function() {
-    $('.drawer').drawer('toggle');
-  });
-
-  // destroy
-  $('.element').on(function() {
-    $('.drawer').drawer('destroy');
-  });
-
-  // Opened
-  $('#element').on('drawer.opened');
-
-  // Closed
-  $('#element').on('drawer.closed');
 </script>

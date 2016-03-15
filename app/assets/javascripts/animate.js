@@ -37,12 +37,7 @@ $(function() {
         'src':  "/assets/logowhite.png"
       });
       $('.logo img').css('margin-top', '-5px');
-      
-      console.log("Making transparent...");
     }
-
-    console.log("done scrolling...");
-    console.log(ypos);
   }
 
   window.addEventListener("scroll", Scroll);
