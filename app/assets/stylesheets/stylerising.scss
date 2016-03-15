@@ -23,7 +23,7 @@ body{
 }
 
 .homepage {
-   background-image: asset-data-url('office.jpg');
+   background-image: asset-url('office.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -100,7 +100,7 @@ body{
 }
 
 .about {
-  background-image: asset-data-url('about.jpg');
+  background-image: asset-url('about.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -154,7 +154,7 @@ body{
 }
 
 #scene2{
-  background-image: asset-data-url('telephon.jpg');
+  background-image: asset-url('telephon.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

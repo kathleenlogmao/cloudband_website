@@ -23,4 +23,4 @@
 //= require functions
 //= require jquery.drawer.min
 //= require iscroll
-//= drawerkat
+//= require drawerkat
