@@ -69,11 +69,43 @@
   }
 }
 
+@media screen 
+  and (device-width: 481px) 
+  and (device-height: 667px) 
+ {
+
+  .for_non_mobile {
+    display: none!important;   
+  }
+
+  .for_mobile {
+    display: block!important;
+  }
+
+  .navbar-header {
+    display: none!important;
+  }
+
+
+}
+
 /* Portrait and Landscape -- GALAXY s3 */
 @media screen 
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
+
+    .for_non_mobile {
+      display: none!important;   
+    }
+
+    .for_mobile {
+      display: block!important;
+    }
+
+    .navbar-header {
+      display: none!important;
+    }
 
 }
 
@@ -82,6 +114,19 @@
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
+
+   .for_non_mobile {
+      display: none!important;   
+    }
+
+    .for_mobile {
+      display: block!important;
+    }
+
+    .navbar-header {
+      display: none!important;
+    }
+
     
 }
 
@@ -98,6 +143,11 @@
     .for_mobile {
       display: block!important;
     }
+
+    .navbar-header {
+      display: none!important;
+    }
+
 
     #topArea {
       height: 700px!important;
@@ -140,6 +190,11 @@
     .for_mobile {
       display: block!important;
     }
+
+    .navbar-header {
+      display: none!important;
+    }
+
 
     #topArea {
       height: 750px!important;
