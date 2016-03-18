@@ -60,6 +60,14 @@
     }
   }
 
+  #scene1 {
+    .textbox {
+      width: auto!important;
+      height: auto!important;
+      margin-top: 15px;
+    }
+  }
+
   .for_non_mobile {
     display: none!important;   
   }
@@ -86,6 +94,13 @@
     display: none!important;
   }
 
+  #scene1 {
+    .textbox {
+      width: auto!important;
+      height: auto!important;
+      margin-top: 15px;
+    }
+  }
 
 }
 
@@ -107,6 +122,14 @@
       display: none!important;
     }
 
+    #scene1 {
+      .textbox {
+        width: auto!important;
+        height: auto!important;
+        margin-top: 15px;
+      }
+    }
+
 }
 
 /* Portrait and Landscape -- GALAXY S5*/
@@ -125,6 +148,14 @@
 
     .navbar-header {
       display: none!important;
+    }
+
+    #scene1 {
+      .textbox {
+        width: auto!important;
+        height: auto!important;
+        margin-top: 15px;
+      }
     }
 
     
@@ -176,6 +207,14 @@
         
         }
     }
+
+    #scene1 {
+      .textbox {
+        width: auto!important;
+        height: auto!important;
+        margin-top: 15px;
+      }
+    }
 }
 
 // ---- iphone 6 plus ---
@@ -223,6 +262,14 @@
         
         }
     }
+
+    #scene1 {
+      .textbox {
+        width: auto!important;
+        height: auto!important;
+        margin-top: 15px;
+      }
+    }
 }
 
 @media only screen 
@@ -249,6 +296,14 @@
       top: 400px!important;
     }
   }
+
+    #scene1 {
+      .textbox {
+        width: auto!important;
+        height: auto!important;
+        margin-top: 15px;
+      }
+    }
 }
 
 
