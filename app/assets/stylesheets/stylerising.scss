@@ -1,6 +1,5 @@
 body{
   background: white;
-  font-family: 'Muli', sans-serif;
 }
 
 .row {
@@ -18,7 +17,7 @@ body{
     text-align: center;
     font-size: 3em;
     font-weight: bolder;
-    top: 300px;
+    top: 350px;
    }
 }
 
@@ -39,7 +38,7 @@ body{
   width: 100%;
   text-align: center;
   display: none;
-  top: 470px!important;
+  top: 550px!important;
 }
 
 #services {
@@ -54,12 +53,13 @@ body{
   color: white;
   text-align: center;
   position: relative;
-  top: 297px!important;
+  top: 330px!important;
   letter-spacing: 1px;
 }
 
 #sceneHowto {
-  margin-bottom: 5%;
+  padding-top: 8%;
+  margin-bottom: 2%;
   .ui.segment {
     border-radius: 0;
   }
@@ -69,11 +69,12 @@ body{
     font-size: 21px;
     padding-top: 110px;
     padding-bottom: 60px;
+    font-family: 'Cedarville Cursive', cursive;
   }
 
   h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #217C7E;
     font-weight: bold;
     margin-top: 2%;
@@ -94,7 +95,7 @@ body{
   }
 
   .imgvwl img{
-    width: 125px;
+    width: 100px;
   }
 
 }
@@ -115,7 +116,7 @@ body{
   padding-top: 2%;
   h3 {
     font-size: 2em;
-    color: #FF3333;
+    color:  rgb(33, 124, 126);
     font-weight: bold;
     text-align: center;
   }
@@ -138,8 +139,8 @@ body{
   }
 
   .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 15%;
+    padding-bottom: 15%;
   }
 
   .black {
@@ -152,12 +153,12 @@ body{
 }
 
 .ourteam {
-    h2 {
+  h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #217C7E;
     font-weight: bold;
-    margin-top: 1%;
+    margin-top: 5%;
     margin-bottom: 1%;
   }
 
@@ -165,6 +166,8 @@ body{
     display: block!important;
     visibility: visible !important;
   }
+
+  padding-bottom: 5%;
 }
 
 #scene2{
@@ -181,16 +184,15 @@ body{
   width: 100%;
   text-align: center;
   color: #217C7E;
-  font-size:30px;
+  font-size: 2.5em;
   font-weight: bold;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .ui.form {
-  border: 1px solid #888;
   padding: 20px;
-  width: 60%;
-  margin-top: 45px;
+  width: 100%;
+  margin-top: 20px;
   padding-bottom: 40px;
   margin-bottom: 10px;
 }
@@ -198,20 +200,10 @@ body{
 .details {
   padding-top: 50px;
 }
-.line {
-  position: absolute;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  border-bottom-color: #e6e6e6;
-  display: table;
-  left: 0px;
-  right: 0px;
-  margin: 0 auto;
-  width: 135px;
-}
+
 
 .white {
-   background-color: rgba(0,0,0, 0.4);
+   background-color: rgba(0,0,0, 0.5);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
   width: 100%;
@@ -222,14 +214,14 @@ body{
 }
 
 .black {
-   background-color: rgba(255,255,255, 0.4);
+  background-color: rgba(255,255,255, 0.4);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
   width: 100%;
   height: 100%;
   margin-top: -2%;
   padding-bottom: 10px;
-  padding: 2
+
 }
 
 .load_page {
@@ -287,6 +279,9 @@ body{
   margin-top: 10px;
 }
 
+.nav {
+  padding-left: 70px;
+}
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
@@ -295,6 +290,7 @@ body{
   width: 300px;
   padding-left: 20px;
   margin-top: -5px;
+  margin-left: 40px;
 }
 
 .navbar-toggle {
