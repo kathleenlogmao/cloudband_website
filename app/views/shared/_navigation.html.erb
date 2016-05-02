@@ -1,6 +1,5 @@
 <nav class="for_non_mobile row navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="for_mobile drawer drawer-left drawer-navbar-default">
+<!--   <div class="for_mobile drawer drawer-left drawer-navbar-default">
   <header role="banner">
     <div class="drawer-header">
       <button type="button" class="drawer-toggle drawer-hamburger">
@@ -43,7 +42,7 @@
         </nav>
       </div>
     </header>
-  </div> 
+  </div>  -->
   <div class="navbar-header">
     <button data-toggle="collapse" class="navbar-toggle ocllapsed" type="button" data-target="#bs-example-navbar-collapse-1">
       <span class="sr-only">Toggle navigation</span>
@@ -52,7 +51,6 @@
       <span class="icon-bar"></span>
     </button>
   </div>
-  <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <div class="row">
       <div class="col-md-6 logo">
@@ -69,8 +67,7 @@
               <%= link_to "#sceneHowto" do %>
                   SERVICES 
                <% end %>
-             </li>
-      
+            </li>
             <li> 
               <%= link_to "#scene1" do %>
                 ABOUT 
@@ -85,8 +82,35 @@
       </div>
     </div>
   </div>
-</nav>        
+  <div class="navz for_mobile">
+    <div class="container">
+      <div class="ui button buttonmenu" id="buttonsidebar">
+        <i class="sidebar icon"> </i> 
+      </div>
+    </div>
+    <div class="ui top demo sidebar ui segment overlay mobile">
+      <%= link_to "#topArea" do %>
+        HOME /
+      <% end %>
+      <%= link_to "#sceneHowto" do %>
+        
+        SERVICES /
+      <% end %>
+  
+      <%= link_to "#scene1" do %>
+       
+        ABOUT /
+      <% end %>
+  
+      <%= link_to "#scene2" do %>
+      
+        CONTACT 
+     <% end %>
+    </div>
+  </div> 
+</nav>  
 
+<!-- 
 <script type="text/javascript">
   $(document).ready(function() {
     $(".drawer").drawer();
@@ -99,25 +123,32 @@
       $('.drawer').drawer('open');
     });
 
-    // close
+   
     $('.element').on(function() {
       $('.drawer').drawer('close');
     });
 
-    // toggle
     $('.element').on(function() {
       $('.drawer').drawer('toggle');
     });
 
-    // destroy
+ 
     $('.element').on(function() {
       $('.drawer').drawer('destroy');
     });
 
-    // Opened
     $('#element').on('drawer.opened');
 
-    // Closed
+  
     $('#element').on('drawer.closed');
+  });
+</script>
+ -->
+
+<script>
+  $(document).ready(function(){
+    $('#buttonsidebar').on('click', function(){
+      $('.ui.sidebar').sidebar('setting', 'transition', 'overlay').sidebar('toggle');
+    });
   });
 </script>

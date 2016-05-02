@@ -19,8 +19,6 @@
 //= require animate
 //= require toastr
 //= require semantic-ui
-//= require drawer.min
 //= require jquery.easing.1.3
 //= require jquery.risingSun
-//= require iscroll
 //= require functions

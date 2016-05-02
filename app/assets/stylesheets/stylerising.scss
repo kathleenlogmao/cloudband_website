@@ -49,12 +49,13 @@ body{
 }
 
 #auther{
-  font-size:18px;
+  font-size: 20px;
   color: white;
   text-align: center;
   position: relative;
   top: 330px!important;
   letter-spacing: 1px;
+  font-family: 'Cedarville Cursive', cursive;
 }
 
 #sceneHowto {
@@ -78,6 +79,7 @@ body{
     color: #217C7E;
     font-weight: bold;
     margin-top: 2%;
+    font-family: 'Cedarville Cursive', cursive;
   }
 
   h3 {
@@ -119,6 +121,7 @@ body{
     color:  rgb(33, 124, 126);
     font-weight: bold;
     text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
   }
 
   p {
@@ -159,6 +162,7 @@ body{
     color: #217C7E;
     font-weight: bold;
     margin-top: 5%;
+    font-family: 'Cedarville Cursive', cursive;
     margin-bottom: 1%;
   }
 
@@ -313,25 +317,42 @@ body{
 
 // ----- DRAWER -----
 
-.drawer-default .drawer-menu-item {
-  padding: 0!important;
+
+.contact-pic {
+  width: 100px;
+  height: 100px;
 }
 
-.drawer-navbar-default .drawer-menu-item a {
-  color: white!important;
-  font-family: 'Muli', sans-serif!important;
-  font-size: 16px!important;
+.hr-contact {
+  width: 30%;
 }
 
-.drawer-main {
-  width: 220px!important;
-}
-
-.drawerlogo {
-  img {
-    width: 150px;
-    margin-top: 15px;
-    margin-left: 10px;
+.navz {
+   .ui.button {
+    background-color: transparent;
+    color: #e2e2e2;
   }
 }
 
+.sidebar.icon {
+  font-size: 25px;
+}
+
+.ui.segment.mobile {
+    background: transparent!important;
+    border: none!important;
+    padding-top: 57px;
+    padding-left: 100px;
+    a:link {
+      color: white!important;
+      font-size: 15px;
+      letter-spacing: 8px;
+    }
+  }
+.ui.top.visible.sidebar, .ui.bottom.visible.sidebar {
+  box-shadow: none!important;
+}
+
+.ui.top.sidebar, .ui.bottom.sidebar {
+  height: 0px;  
+}
