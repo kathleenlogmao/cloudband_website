@@ -25,5 +25,8 @@
   <body>
     <%= render partial: "shared/navigation" %>
       <%= yield %>
+    <div id="portfolio-overlay">
+      <%= render partial: "shared/portfolio_modal" %>
+    </div>
   </body>
 </html>
