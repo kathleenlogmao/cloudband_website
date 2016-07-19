@@ -5,6 +5,16 @@ $(document).ready(function() {
   var $message = $('#message');
   var $showmsg = $('.showmsg');
 
+  $('#portfolio-btn').on('click', function() {
+    $('#portfolio-overlay').fadeIn();
+    $('#portfolio-modal').addClass('active');
+  });
+
+  $('.close-modal').on('click', function() {
+    $('#portfolio-overlay').fadeOut("slow");
+    $('#portfolio-modal').removeClass('active');
+  });
+  
   $('#submit-form').on('click', function() {
     $('.load_page').toggle();
      var messageme = {

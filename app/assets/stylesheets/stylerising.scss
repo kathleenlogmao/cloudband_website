@@ -205,70 +205,99 @@ body{
   padding-top: 50px;
 }
 
-#portfolio {
-  margin-bottom: 2%;
+#portfolio-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
 
-  h2 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #217C7E;
-    font-weight: bold;
-    font-family: 'Cedarville Cursive', cursive;
-    overflow: visible!important;
-  }
-
-  h3 {
-    text-align: center;
-    color: #888;
-  }
-
-  .imgvw {
-    margin-top: 3%;
-  }
-
-  .black-hover {
-    background-color: black;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .imgvwl .text {
-    position: absolute;
-    top: 10%;
+  #portfolio-modal {
+    background-color: white;
+    margin: 3%;
+    opacity: 0;
     visibility: hidden;
-    //text-align: left;
-    width: 100%;
-    margin: 0 auto;
+    position: absolute;
+    left: 7%;
+    top: 7%;
+    width: 80%;
+    height: 87%;
+    border: 3px solid #c4bfbb;
+    overflow: auto;
+    z-index: 999;
+    h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #217C7E;
+      font-weight: bold;
+      font-family: 'Cedarville Cursive', cursive;
+      overflow: visible!important;
+    }
 
     h3 {
-      font-weight: normal;
-      color: white;
+      text-align: center;
+      color: #888;
+    }
+
+    .imgvw {
+      margin-top: 2%;
+    }
+
+    .hover {
+      background-color: black;
+      position: relative;
+      //overflow: hidden;
+      padding: 0;
+      display: table;
+    }
+
+    .imgvwl .text {
+      position: absolute;
+      top: 10%;
+      visibility: hidden;
+      width: 100%;
+      margin: 0 auto;
+
+      h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: white;
+      }
+    }
+
+    .imgvwl:hover .text {
+      visibility: visible;
+    }
+
+    .imgvwl:hover img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      -webkit-transition: opacity 0.2s linear;
+      -moz-transition: opacity 0.2s linear;
+      -o-transition: opacity 0.2s linear;
+      transition: opacity 0.2s linear;
+    }
+
+    .imgvwl img{
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      display: table-row;
+      -webkit-transition: opacity 0.2s linear;
+      -moz-transition: opacity 0.2s linear;
+      -o-transition: opacity 0.2s linear;
+      transition: opacity 0.2s linear;
     }
   }
 
-  .imgvwl:hover .text {
+  #portfolio-modal.active {
+    opacity: 1;
     visibility: visible;
   }
-
-  .imgvwl:hover img {
-    opacity: 0.5;
-    -webkit-transition: opacity 0.2s linear;
-    -moz-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
-  }
-
-  .imgvwl img{
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    -webkit-transition: opacity 0.2s linear;
-    -moz-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
-  }
 }
-
 .white {
    background-color: rgba(0,0,0, 0.5);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
