@@ -68,7 +68,7 @@ body{
     color: #888;
     text-align: center;
     font-size: 21px;
-    padding-top: 110px;
+    padding-top: 80px;
     padding-bottom: 60px;
     font-family: 'Cedarville Cursive', cursive;
   }
@@ -355,4 +355,14 @@ body{
 
 .ui.top.sidebar, .ui.bottom.sidebar {
   height: 0px;  
+}
+
+.see_our_work {
+  .btn { 
+    color: #217C7E!important  ;
+    font-weight: bold;
+    font-size: 18px!important;
+    font-family: 'Cedarville Cursive', cursive;
+  }
+    padding-bottom: 20px;
 }

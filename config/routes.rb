@@ -4,4 +4,5 @@ Rails.application.routes.draw do
  root to: "pages#index"
 
  post "/contact", to: "pages#contact"
+ get "/portfolio", to: "pages#portfolio"
 end
