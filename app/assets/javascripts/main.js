@@ -12,10 +12,6 @@ $(document).ready(function() {
     .modal('show');
   });
 
-  $('.close-modal').on('click', function() {
-    $('.ui.long.modal').modal('hide');
-  });
-
   $('#submit-form').on('click', function() {
     $('.load_page').toggle();
      var messageme = {
