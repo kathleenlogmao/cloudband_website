@@ -6,15 +6,16 @@ $(document).ready(function() {
   var $showmsg = $('.showmsg');
 
   $('#portfolio-btn').on('click', function() {
-    $('#portfolio-overlay').fadeIn();
-    $('#portfolio-modal').addClass('active');
+    $('.ui.long.modal').modal({
+      blurring: true
+    })
+    .modal('show');
   });
 
   $('.close-modal').on('click', function() {
-    $('#portfolio-overlay').fadeOut("slow");
-    $('#portfolio-modal').removeClass('active');
+    $('.ui.long.modal').modal('hide');
   });
-  
+
   $('#submit-form').on('click', function() {
     $('.load_page').toggle();
      var messageme = {
